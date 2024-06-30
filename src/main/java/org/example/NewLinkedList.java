@@ -142,7 +142,7 @@ public class NewLinkedList<E> implements NewList<E>{
     }
 
     /**
-     * Удаляет все элементы из списка.
+     * Удаляет все элементы из списка, обнуляя значение и ссылки узлов
      */
     public void clear() {
         Node<E> current = first;
