@@ -11,6 +11,10 @@ public class NewLinkedList<E> implements NewList<E>{
     private Node<E> last;
     private int size;
 
+
+    public int size(){
+        return size;
+    }
     /**
      * Возвращает актуальный размер листа
      * @return возвращает целочисленное значние количества элементов

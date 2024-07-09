@@ -1,6 +1,9 @@
 package org.example;
 
 public interface NewList<E>{
+
+    int size();
+
     /**
      * Возвращает актуальный размер листа
      * @return возвращает целочисленное значние количества элементов
