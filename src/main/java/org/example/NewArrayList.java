@@ -14,6 +14,10 @@ public class NewArrayList<E> implements NewList<E>{
     private int capacity;
     private Object[] arr;
 
+    public int size(){
+        return size;
+    }
+
     /**
      * Конструктор по умолчания, создает пустой список с заданным размером по умолчанию
      */

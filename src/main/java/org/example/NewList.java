@@ -1,6 +1,9 @@
 package org.example;
 
 public interface NewList<E>{
+
+    int size();
+
     /**
      * Дабавляет элемент в список по указанному индексу
      * @param index индекс по которому должен быть вставлен объект

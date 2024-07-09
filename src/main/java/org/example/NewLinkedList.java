@@ -11,6 +11,10 @@ public class NewLinkedList<E> implements NewList<E>{
     private Node<E> last;
     private int size;
 
+
+    public int size(){
+        return size;
+    }
     /**
      * Конструктор по умолчанию, создает пустой двусвязный список
      */
@@ -101,7 +105,7 @@ public class NewLinkedList<E> implements NewList<E>{
     /**
      * Возвращает объект по указанному индексу
      *
-     * @param index индекс возвращаемого объекта списка
+     * @param index индекс возвращаемого элемента списка
      * @return элемент по указанному индексу
      * @throws IndexOutOfBoundsException если индекс выходит за пределы списка
      */
@@ -116,7 +120,7 @@ public class NewLinkedList<E> implements NewList<E>{
     /**
      * Удаляет указанный объект из списка
      *
-     * @param obj удаляемый объект списка
+     * @param obj удаляемый элемент списка
      * @return возвращает удаленный объект, если он был найден и удален, иначе null
      */
     public E remove(E obj) {
