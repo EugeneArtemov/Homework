@@ -13,7 +13,7 @@ public class Main {
 
         Ex.add(14);
         Ex.add(6);
-        Ex.add(1, 0);
+
         //System.out.println(Ex.get(2));
         Ex.remove(2);
         for (int i = 0; i < 5; i++)
