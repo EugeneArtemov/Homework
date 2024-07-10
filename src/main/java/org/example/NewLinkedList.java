@@ -201,5 +201,21 @@ public class NewLinkedList<E> implements NewList<E>{
         };
     }
 
-
+    /**
+     * Возвращает строковое представление листа
+     * @return строковое представление листа
+     */
+    public String toString() {
+        StringBuilder tempStr = new StringBuilder("[");
+        Node<E> current = first;
+        while (current != null) {
+            tempStr.append(current.element);
+            if (current.next != null) {
+                tempStr.append(", ");
+            }
+            current = current.next;
+        }
+        tempStr.append("]");
+        return tempStr.toString();
+    }
 }

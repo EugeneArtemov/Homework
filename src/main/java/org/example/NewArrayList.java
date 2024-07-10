@@ -110,7 +110,7 @@ public class NewArrayList<E> implements NewList<E>{
      * Сортирует список, используя компаратор для объектов списка
      */
     public void sort() {
-        Arrays.sort((E[]) arr, 0, capacity, comparator());
+        Arrays.sort((E[]) arr, 0, size, comparator());
     }
 
     /**
@@ -137,5 +137,21 @@ public class NewArrayList<E> implements NewList<E>{
             if (o2 == null) return -1;
             return ((Comparable<E>) o1).compareTo(o2);
         };
+    }
+
+    /**
+     * Возвращает строковое представление листа
+     * @return строковое представление листа
+     */
+    public String toString(){
+        StringBuilder tempStr = new StringBuilder("[");
+        for (Object i: arr) {
+            tempStr.append(i);
+            tempStr.append(", ");
+            }
+        tempStr.deleteCharAt(tempStr.length() - 2);
+        tempStr.deleteCharAt(tempStr.length() - 1);
+        tempStr.append("]");
+        return tempStr.toString();
     }
 }
